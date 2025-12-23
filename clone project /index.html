@@ -4,125 +4,250 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MakeYour Trip - Travel the World</title>
+  <title>MakeYour Trip - Premium Travel Experience</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
- <header>
-    <h1>MakeYour Trip</h1>
+
+  <header class="glass-dark">
+    <h1>MakeYour <span>Trip</span></h1>
     <nav>
-      <a href="#flights">Flights</a>
-      <a href="#hotels">Hotels</a>
-      <a href="#trains">Trains</a>
-      <a href="#bus">Bus</a>
-      <a href="#login" style="border: 1px solid white; padding: 5px 15px; border-radius: 20px;">Login</a>
+      <a href="#offers">Featured</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#why-us">Why Us</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#login" class="btn-login">Login</a>
     </nav>
   </header>
-   <section class="hero">
-    <h2>Explore the World with Us</h2>
-    <p>Discover flights, hotels, trains & holiday packages at the best prices.</p>
-  </section>
-    <div class="search-container">
-    <div class="search-box">
-      <input type="text" placeholder="From (City/Airport)">
-      <input type="text" placeholder="To (City/Airport)">
-      <input type="date" title="Departure">
-      <input type="date" title="Return">
-      <select>
-        <option>1 Traveller</option>
-        <option>2 Travellers</option>
-        <option>3 Travellers</option>
-        <option>4+ Travellers</option>
-      </select>
-      <button>Search</button>
+
+  <section class="hero">
+    <div class="hero-content animate-fade-up">
+      <h2>Explore the Unseen</h2>
+      <p>Curated journeys to the world's most breathtaking destinations.</p>
     </div>
-  </div>
-    <section class="offers" id="offers">
-    <h2 class="section-title">Special Offers</h2>
-    <div class="cards-grid">
-      <div class="card">
-        <div style="overflow: hidden;">
-          <img src="flight.webp" alt="Flight Offer">
-        </div>
-        <div class="card-content">
-          <h3>Domestic Flights</h3>
-          <p>Get up to 20% off on domestic flights. Limited time offer.</p>
-          <a href="#" class="btn-link">Book Now &rarr;</a>
-        </div>
-      </div>
 
-      <div class="card">
-        <div style="overflow: hidden;">
-          <img src="hotel booking.png" alt="Hotel Offer">
+    <div class="search-container glass animate-fade-up" style="animation-delay: 0.2s;">
+      <div class="search-box">
+        <div class="input-group">
+          <label>Location</label>
+          <input type="text" placeholder="Where to?" class="input-field">
         </div>
-        <div class="card-content">
-          <h3>Luxury Hotels</h3>
-          <p>Stay at top-rated hotels with complimentary breakfast and wifi.</p>
-          <a href="#" class="btn-link">View Hotels &rarr;</a>
+        <div class="input-group">
+          <label>Check In</label>
+          <input type="date" class="input-field">
         </div>
-      </div>
-
-      <div class="card">
-        <div style="overflow: hidden;">
-          <img src="TRAIN picture.png" alt="Train Offer">
+        <div class="input-group">
+          <label>Check Out</label>
+          <input type="date" class="input-field">
         </div>
-        <div class="card-content">
-          <h3>Express Trains</h3>
-          <p>Zero cancellation fees on train bookings. Safe & secure.</p>
-          <a href="#" class="btn-link">Check Availability &rarr;</a>
+        <div class="input-group">
+          <label>Guests</label>
+          <select class="input-field">
+            <option>2 Adults, 1 Room</option>
+            <option>1 Adult, 1 Room</option>
+            <option>Family (2A + 2C)</option>
+          </select>
         </div>
+        <button class="btn-search">Explore</button>
       </div>
     </div>
   </section>
 
-  <section class="destinations" style="background-color: white;">
-    <h2 class="section-title">Popular Destinations</h2>
-    <div class="cards-grid">
-      <div class="card">
-        <div style="overflow: hidden;">
-          <img src="taj images.jpeg" alt="India">
-        </div>
-        <div class="card-content">
-          <h3>The Taj Mahal, India</h3>
-          <p>Experience the symbol of love and architectural marvel.</p>
-        </div>
-      </div>
+  <section id="offers">
+    <div class="container">
+      <h2 class="section-title">Exclusive Offers</h2>
+      <div class="cards-grid">
 
-      <div class="card">
-        <div style="overflow: hidden;">
-          <img src="beach_resort.png" alt="Resort">
+        <div class="card">
+          <div class="card-image">
+            <img src="flight_premium.png" alt="Private Jet">
+          </div>
+          <div class="card-content">
+            <span class="card-price">From $499</span>
+            <h3>Premium Flights</h3>
+            <p>Experience luxury at 30,000 feet with our partner airlines.</p>
+            <a href="#" class="btn-link">View Details <span>&rarr;</span></a>
+          </div>
         </div>
-        <div class="card-content">
-          <h3>Beach Resorts</h3>
-          <p>Relax at the finest beaches with crystal clear waters.</p>
-        </div>
-      </div>
 
-      <div class="card">
-        <div style="overflow: hidden;">
-          <img src="mountain_train.png" alt="Scenic Train">
+        <div class="card">
+          <div class="card-image">
+            <img src="hotel_premium.png" alt="Luxury Hotel">
+          </div>
+          <div class="card-content">
+            <span class="card-price">Up to 30% Off</span>
+            <h3>5-Star Suites</h3>
+            <p>Complimentary spa access and breakfast included.</p>
+            <a href="#" class="btn-link">Book Now <span>&rarr;</span></a>
+          </div>
         </div>
-        <div class="card-content">
-          <h3>Scenic Journeys</h3>
-          <p>Enjoy the breathtaking views from our luxury trains.</p>
+
+        <div class="card">
+          <div class="card-image">
+            <img src="train_premium.png" alt="Express Train">
+          </div>
+          <div class="card-content">
+            <span class="card-price">Business Class</span>
+            <h3>Scenic Rail</h3>
+            <p>Travel through mountains in comfort and style.</p>
+            <a href="#" class="btn-link">Check Seats <span>&rarr;</span></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="destinations" style="background: #fff;">
+    <div class="container">
+      <h2 class="section-title">Trending Destinations</h2>
+      <div class="cards-grid">
+
+        <div class="card">
+          <div class="card-image">
+            <img src="dest_india_premium.png" alt="Taj Mahal">
+          </div>
+          <div class="card-content">
+            <span class="card-price highlight">India</span>
+            <h3>The Royal Heritage</h3>
+            <p>Immerse yourself in the timeless beauty of Agra.</p>
+            <a href="#" class="btn-link">Explore <span>&rarr;</span></a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <img src="dest_maldives_premium.png" alt="Maldives">
+          </div>
+          <div class="card-content">
+            <span class="card-price highlight">Maldives</span>
+            <h3>Island Paradise</h3>
+            <p>Crystal clear waters and overwater villas await.</p>
+            <a href="#" class="btn-link">Explore <span>&rarr;</span></a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <img src="dest_swiss_premium.png" alt="Switzerland">
+          </div>
+          <div class="card-content">
+            <span class="card-price highlight">Switzerland</span>
+            <h3>Alpine Adventures</h3>
+            <p>Breathtaking views and unforgettable ski experiences.</p>
+            <a href="#" class="btn-link">Explore <span>&rarr;</span></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="why-us" class="features">
+    <div class="container">
+      <h2 class="section-title">Why Choose Us</h2>
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="icon-box">
+            <i class="fas fa-globe-americas"></i>
+          </div>
+          <h3>Global Coverage</h3>
+          <p>Access to over 1 million hotels and 500 airlines worldwide.</p>
+        </div>
+        <div class="feature-item">
+          <div class="icon-box">
+            <i class="fas fa-wallet"></i>
+          </div>
+          <h3>Best Price Guarantee</h3>
+          <p>We match any competitor's price for the same itinerary.</p>
+        </div>
+        <div class="feature-item">
+          <div class="icon-box">
+            <i class="fas fa-headset"></i>
+          </div>
+          <h3>24/7 Support</h3>
+          <p>Our dedicated travel experts are always here to help you.</p>
         </div>
       </div>
     </div>
   </section>
-  
- <footer>
-    <p>&copy; 2025 MakeYour Trip Clone | Designed by Priyanshu Gupta</p>
-    <div style="margin-top: 20px;">
-      <img src="QR CODE.png" alt="QR Code" style="width: 100px; border-radius: 8px;">
+
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <h2 class="section-title">What Travelers Say</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="user-info">
+            <img src="avatar_1.png" alt="User">
+            <div>
+              <h4>James Carter</h4>
+              <span>Entrepreneur</span>
+            </div>
+          </div>
+          <p>"The private jet service was impeccable. Everything was handled with utmost professionalism. Highly
+            recommended!"</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="user-info">
+            <img src="avatar_2.png" alt="User">
+            <div>
+              <h4>Sarah Jenkins</h4>
+              <span>Travel Blogger</span>
+            </div>
+          </div>
+          <p>"I've never seen the Maldives like this. MakeYour Trip found us the most secluded and beautiful water
+            villa."</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="user-info">
+            <img src="avatar_3.png" alt="User">
+            <div>
+              <h4>Michael Wong</h4>
+              <span>Family Traveler</span>
+            </div>
+          </div>
+          <p>"Booking a family trip to Switzerland was stress-free. The kids loved the scenic train ride!"</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-content">
+        <h2>Join Our Exclusive Club</h2>
+        <p>Subscribe for member-only deals and travel inspiration.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Enter your email address">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h2>MakeYour Trip</h2>
+        <p>Crafting memories, one journey at a time.</p>
+      </div>
+      <div>
+        <img src="QR CODE.png" alt="Get App" class="qr-code">
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p>&copy; 2025 MakeYour Trip. All rights reserved.</p>
     </div>
   </footer>
-
-
-  
 
 </body>
 
